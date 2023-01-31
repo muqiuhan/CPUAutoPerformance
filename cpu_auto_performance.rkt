@@ -64,10 +64,4 @@
         (set-cpu-mode 'performance)
         (set-cpu-mode 'powersave))))
 
-(define CHECK_INTERVAL 60)
-
-(letrec ([running (λ ()
-                    (CPU_PERFORMANCE_STRATEGY)
-                    (sleep 60)
-                    (running))])
-  (running))
+(CPU_PERFORMANCE_STRATEGY)
