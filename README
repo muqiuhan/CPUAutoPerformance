@@ -8,6 +8,10 @@
 O USAGE    
     Customize the CPU strategy through the CPU_PERFORMANCE_STRATEGY variable.
 
+    Racket's permanent background memory usage is about 100MB,
+    so this script returns immediately after running it once.
+    It is recommended to call it every once in a while through an external shell script (see cpuautoper.sh).
+
 O LICENSE
 
     MIT License
